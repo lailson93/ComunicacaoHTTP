@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView tvCotacao;
     private Button btCotacao;
-    private static final String URL = "http://www.google.com.br";
+    private static final String URL = "rate-exchange.appspot.com/currency?from=USD&to=BRL";
 
 
     @Override
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Log.d("Error.Response",response);
+                        Log.d("Error.Response", String.valueOf(error));
                     }
                 }
 
